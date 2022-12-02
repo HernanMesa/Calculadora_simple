@@ -15,9 +15,11 @@ namespace Calculadora
             int resultado;
             
 
-            Console.WriteLine("Para suma ingresa 1 , para resta 2, para multiplicación 3");
+            Console.WriteLine("Para suma ingresa 1 , para resta 2, para multiplicación 3, para division 4");
 
-switch (operacion)
+           
+
+                switch (operacion)
 
 
                  {
