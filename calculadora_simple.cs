@@ -56,9 +56,17 @@ switch (operacion)
 
                         break;
 
-                   
+                        case 4:
 
-                        break;
+                    Console.WriteLine("Ingrese el primer número");
+                    num1 = int.Parse(Console.ReadLine());
+                    Console.WriteLine("Ingrese el segundo número");
+                    num2 = int.Parse(Console.ReadLine());
+                    resultado = num1 / num2;
+                    Console.WriteLine($"El resultado es: {resultado}");
+
+                    break;
+
 
                     default:
                         Console.WriteLine("Debe ingresar números del 1 al 3");
