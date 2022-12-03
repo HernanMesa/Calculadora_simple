@@ -17,7 +17,9 @@ namespace Calculadora
 
             Console.WriteLine("Para suma ingresa 1 , para resta 2, para multiplicación 3, para división 4");
 
-           
+           try
+            {
+                int operacion = int.Parse(Console.ReadLine());
 
                 switch (operacion)
 
@@ -58,7 +60,7 @@ namespace Calculadora
 
                         break;
 
-                    case 3:
+                    case 4:
 
                         Console.WriteLine("Ingrese el primer número");
                         num1 = int.Parse(Console.ReadLine());
@@ -74,7 +76,14 @@ namespace Calculadora
                         Console.WriteLine("Debe ingresar números del 1 al 4");
                         break;
                 }
-                }
+            }
+                catch (Exception ex)
+
+
+            {
+                Console.WriteLine(ex.Message);
+            }
+        }
     }
 }
 
